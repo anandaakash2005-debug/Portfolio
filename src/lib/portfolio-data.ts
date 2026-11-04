@@ -102,7 +102,7 @@ export const projects: Project[] = [
       "LLM APIs",
       "Render",
     ],
-    liveUrl: "https://satquery-frontend-nydb.onrender.com/",
+    liveUrl: "https://stratify-ai-nydb.onrender.com/",
     videoSources: [
       { src: stratifyDemoWebm, type: "video/webm" },
       { src: stratifyDemoMp4, type: "video/mp4" },
