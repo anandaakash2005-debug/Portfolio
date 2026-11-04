@@ -122,74 +122,6 @@ export const projects: Project[] = [
     },
   },
   {
-    id: "mediguide",
-    name: "MediGuide AI",
-    category: "AI-Powered Personal Health Guidance Platform",
-    summary:
-      "A full-stack health assistance platform that generates condition-based educational health guidance while emphasizing transparency, safety and responsible AI use.",
-    problem:
-      "Reliable, condition-oriented lifestyle guidance is hard to find in one place, and AI health tools often overstate what they can do.",
-    built:
-      "A platform that generates educational health plans — diet, exercise, medicine reference information, specialization-based doctor recommendations and reminders — with disclaimers and guideline metadata built in.",
-    capabilities: [
-      "Diet guidance: foods to consider and avoid",
-      "Structured exercise routines",
-      "Specialization-based doctor recommendations",
-      "Medication and meal reminders",
-    ],
-    tech: ["Full-stack", "LLM-generated guidance"],
-    note: "MediGuide AI provides educational information and does not replace professional medical advice, diagnosis or treatment.",
-    videoId: "z-tBilOgID8",
-    motif: "health",
-    caseStudy: {
-      approach:
-        "Designed with public-health guidance and safety disclaimers in mind. Guidance is positioned as educational support, not diagnosis.",
-      architecture: [
-        "User condition input",
-        "Health-plan generation",
-        "Diet · Exercise · Medicine reference",
-        "Doctor recommendations · Reminders",
-        "Disclaimer & guideline metadata",
-      ],
-    },
-  },
-  {
-    id: "jansetu",
-    name: "JanSetu",
-    category: "Government Scheme Accessibility Platform",
-    summary:
-      "An AI-assisted government-scheme accessibility platform designed to help citizens discover potentially relevant welfare schemes based on demographic and socioeconomic profile information.",
-    problem:
-      "Government-scheme information can be scattered and eligibility rules may be difficult for citizens to understand.",
-    built:
-      "A Next.js application with a profile/authentication workflow, API routes backed by MySQL and a multilingual UI architecture. AI-based recommendation is a planned layer on top of eligibility matching.",
-    capabilities: [
-      "Citizen profile: age, state, residence, caste, disability, profession, BPL status",
-      "Registration flow via API routes to MySQL",
-      "Multilingual UI architecture",
-      "Planned: AI recommendation layer",
-    ],
-    tech: ["Next.js", "React", "TypeScript", "Tailwind CSS", "MySQL"],
-    liveUrl: "https://jansetu-plum.vercel.app/",
-    videoSources: [
-      { src: jansetuDemoWebm, type: "video/webm" },
-      { src: jansetuDemoMp4, type: "video/mp4" },
-    ],
-    note: "Independent project — not affiliated with any government body.",
-    motif: "flow",
-    caseStudy: {
-      approach:
-        "Start from the citizen's profile and match it against eligibility rules, so people see schemes they may qualify for instead of searching blind.",
-      architecture: [
-        "Profile UI",
-        "/api/register",
-        "Server/API logic",
-        "MySQL",
-        "Eligibility / recommendation layer (planned AI)",
-      ],
-    },
-  },
-  {
     id: "payroll",
     name: "Employee Payroll Management System",
     category: "Java Full-Stack · Secure REST Application",
@@ -233,6 +165,74 @@ export const projects: Project[] = [
         "Spring Security JWT filter",
         "REST controller → PayrollService",
         "JPA / Hibernate → MySQL",
+      ],
+    },
+  },
+  {
+    id: "jansetu",
+    name: "JanSetu",
+    category: "Government Scheme Accessibility Platform",
+    summary:
+      "An AI-assisted government-scheme accessibility platform designed to help citizens discover potentially relevant welfare schemes based on demographic and socioeconomic profile information.",
+    problem:
+      "Government-scheme information can be scattered and eligibility rules may be difficult for citizens to understand.",
+    built:
+      "A Next.js application with a profile/authentication workflow, API routes backed by MySQL and a multilingual UI architecture. AI-based recommendation is a planned layer on top of eligibility matching.",
+    capabilities: [
+      "Citizen profile: age, state, residence, caste, disability, profession, BPL status",
+      "Registration flow via API routes to MySQL",
+      "Multilingual UI architecture",
+      "Planned: AI recommendation layer",
+    ],
+    tech: ["Next.js", "React", "TypeScript", "Tailwind CSS", "MySQL"],
+    liveUrl: "https://jansetu-plum.vercel.app/",
+    videoSources: [
+      { src: jansetuDemoWebm, type: "video/webm" },
+      { src: jansetuDemoMp4, type: "video/mp4" },
+    ],
+    note: "Independent project — not affiliated with any government body.",
+    motif: "flow",
+    caseStudy: {
+      approach:
+        "Start from the citizen's profile and match it against eligibility rules, so people see schemes they may qualify for instead of searching blind.",
+      architecture: [
+        "Profile UI",
+        "/api/register",
+        "Server/API logic",
+        "MySQL",
+        "Eligibility / recommendation layer (planned AI)",
+      ],
+    },
+  },
+  {
+    id: "mediguide",
+    name: "MediGuide AI",
+    category: "AI-Powered Personal Health Guidance Platform",
+    summary:
+      "A full-stack health assistance platform that generates condition-based educational health guidance while emphasizing transparency, safety and responsible AI use.",
+    problem:
+      "Reliable, condition-oriented lifestyle guidance is hard to find in one place, and AI health tools often overstate what they can do.",
+    built:
+      "A platform that generates educational health plans — diet, exercise, medicine reference information, specialization-based doctor recommendations and reminders — with disclaimers and guideline metadata built in.",
+    capabilities: [
+      "Diet guidance: foods to consider and avoid",
+      "Structured exercise routines",
+      "Specialization-based doctor recommendations",
+      "Medication and meal reminders",
+    ],
+    tech: ["Full-stack", "LLM-generated guidance"],
+    note: "MediGuide AI provides educational information and does not replace professional medical advice, diagnosis or treatment.",
+    videoId: "z-tBilOgID8",
+    motif: "health",
+    caseStudy: {
+      approach:
+        "Designed with public-health guidance and safety disclaimers in mind. Guidance is positioned as educational support, not diagnosis.",
+      architecture: [
+        "User condition input",
+        "Health-plan generation",
+        "Diet · Exercise · Medicine reference",
+        "Doctor recommendations · Reminders",
+        "Disclaimer & guideline metadata",
       ],
     },
   },
