@@ -831,12 +831,13 @@ function Index() {
               <span className="text-primary">Let's build something useful.</span>
             </h2>
             <div className="mt-8 flex flex-wrap gap-4">
-              <a
+              <Ext
                 href={`mailto:${profile.email}`}
+                label="Send email to Akash"
                 className="bg-primary px-6 py-3 font-mono text-xs uppercase tracking-wider text-primary-foreground hover:opacity-90"
               >
                 Email Me
-              </a>
+              </Ext>
               <Ext
                 href={profile.linkedin}
                 label="LinkedIn (opens in new tab)"
@@ -891,9 +892,9 @@ function Index() {
               <Ext href={profile.instagram} className="hover:text-primary">
                 Instagram
               </Ext>
-              <a href={`mailto:${profile.email}`} className="hover:text-primary">
+              <Ext href={`mailto:${profile.email}`} className="hover:text-primary">
                 Email
-              </a>
+              </Ext>
             </div>
             <p className="mt-3 text-xs text-muted-foreground">
               © {year} · Designed &amp; built by Akash Mahapatra.
