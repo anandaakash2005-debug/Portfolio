@@ -9,6 +9,7 @@ import {
   Menu,
   X,
   ChevronDown,
+  FileText,
 } from "lucide-react";
 import {
   profile,
@@ -376,6 +377,15 @@ function ProjectBlock({ p, i }: { p: Project; i: number }) {
                 {p.liveLabel ?? "Live Demo"} <ArrowUpRight className="h-4 w-4" />
               </Ext>
             )}
+            {p.repoUrl && (
+              <Ext
+                href={p.repoUrl}
+                label={`${p.name} GitHub repository (opens in new tab)`}
+                className="inline-flex items-center gap-2 border border-border px-4 py-2 font-mono text-xs uppercase tracking-wider transition-colors hover:border-primary hover:text-primary"
+              >
+                <Github className="h-4 w-4" />
+              </Ext>
+            )}
             <button
               onClick={() => setOpen(!open)}
               aria-expanded={open}
@@ -532,6 +542,15 @@ function Index() {
                   >
                     <a href="#work">
                       Explore My Work <ArrowUpRight aria-hidden className="h-4 w-4" />
+                    </a>
+                  </Button>
+                  <Button
+                    asChild
+                    variant="outline"
+                    className="h-12 rounded-sm border-border bg-transparent px-5 font-mono text-xs tracking-normal shadow-none transition duration-200 hover:border-primary/60 hover:bg-primary/5 hover:text-primary sm:px-6"
+                  >
+                    <a href={profile.resume} target="_blank" rel="noopener noreferrer">
+                      Resume <FileText aria-hidden className="h-4 w-4" />
                     </a>
                   </Button>
                   <Button

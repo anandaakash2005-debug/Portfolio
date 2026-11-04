@@ -13,6 +13,7 @@ export const profile = {
   linkedin: "https://www.linkedin.com/in/akash-mahapatra-291597363",
   github: "https://github.com/anandaakash2005-debug",
   instagram: "https://www.instagram.com/mahapatra2166",
+  resume: "/My_Resume.pdf",
 };
 
 export type Project = {
@@ -61,6 +62,7 @@ export const projects: Project[] = [
       "Spectral Indices",
     ],
     liveUrl: "https://satquery-ai-ris1.onrender.com/",
+    repoUrl: "https://github.com/anandaakash2005-debug/SatQuery.AI",
     videoId: "qjhBuW_rYPM",
     motif: "sat",
     caseStudy: {
@@ -103,6 +105,7 @@ export const projects: Project[] = [
       "Render",
     ],
     liveUrl: "https://stratify-ai-nydb.onrender.com/",
+    repoUrl: "https://github.com/anandaakash2005-debug/Stratify.AI",
     videoSources: [
       { src: stratifyDemoWebm, type: "video/webm" },
       { src: stratifyDemoMp4, type: "video/mp4" },
@@ -151,6 +154,7 @@ export const projects: Project[] = [
     ],
     liveUrl: "https://anandaakash2005-debug.github.io/employee-payroll-management-system/",
     liveLabel: "Live Demo",
+    repoUrl: "https://github.com/anandaakash2005-debug/employee-payroll-management-system",
     videoSources: [
       { src: payrollLoopWebm, type: "video/webm" },
       { src: payrollLoopMp4, type: "video/mp4" },
@@ -186,6 +190,7 @@ export const projects: Project[] = [
     ],
     tech: ["Next.js", "React", "TypeScript", "Tailwind CSS", "MySQL"],
     liveUrl: "https://jansetu-plum.vercel.app/",
+    repoUrl: "https://github.com/anandaakash2005-debug/Jansetu",
     videoSources: [
       { src: jansetuDemoWebm, type: "video/webm" },
       { src: jansetuDemoMp4, type: "video/mp4" },
@@ -222,6 +227,7 @@ export const projects: Project[] = [
     ],
     tech: ["Full-stack", "LLM-generated guidance"],
     note: "MediGuide AI provides educational information and does not replace professional medical advice, diagnosis or treatment.",
+    repoUrl: "https://github.com/anandaakash2005-debug/MediGuide_AI",
     videoId: "z-tBilOgID8",
     motif: "health",
     caseStudy: {
