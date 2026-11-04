@@ -1,0 +1,24 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+.output/
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# Deployment and framework cache
+.wrangler/
+.tanstack/
+.vercel/
+
+# Logs
+*.log
+npm-debug.log*
+
+# Operating system
+.DS_Store
+Thumbs.db
